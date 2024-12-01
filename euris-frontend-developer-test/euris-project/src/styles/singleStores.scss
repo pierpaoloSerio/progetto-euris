@@ -1,0 +1,102 @@
+.product-list.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.product-list.panel-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.product-item.grid-item {
+  display: flex;
+  border: 1px solid #c8e6c9;
+  background-color: #e8f5e9;
+  border-radius: 0.5rem;
+  width: fit-content;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item.grid-item:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item.panel-item {
+  border-radius: 0.5rem;
+  border: 1px solid #c8e6c9;
+  padding: 1rem;
+  background-color: #e8f5e9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item.panel-item:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.delete-button {
+  align-self: center;
+  padding-right: 0.5rem;
+}
+
+.delete-button-icon{
+  cursor: pointer;
+  background-color: #007bff;
+  color: #ffff;
+  border: none;
+}
+
+.delete-button-icon:hover {
+  color: #ff0000; /* Colore rosso al passaggio del mouse */
+}
+
+.title {
+  font-size: 2.5rem; /* Dimensione del font */
+  font-weight: bold; /* Grassetto */
+  color: #4b2e83; /* Colore viola elegante */
+  text-align: center; /* Centrato */
+  margin-bottom: 1rem; /* Spazio inferiore */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Effetto ombra */
+}
+
+.subtitle {
+  font-size: 1.2rem; /* Dimensione del sottotitolo */
+  color: #6c757d; /* Grigio tenue */
+  text-align: center; /* Centrato */
+  margin-bottom: 2rem; /* Spazio sotto il sottotitolo */
+}
+
+.employee-list {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+
+  h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #4b2e83;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #333;
+  }
+
+  .no-employees {
+    color: #6c757d; /* Grigio tenue */
+    font-style: italic;
+    margin-top: 1rem;
+  }
+}
